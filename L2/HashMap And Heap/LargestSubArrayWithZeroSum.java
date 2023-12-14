@@ -7,10 +7,16 @@ class GfG
         int ps = 0;
         int ans=0;
         
-        mp.put(0,-1);
+        // mp.put(0,-1);
         for(int i=0; i<arr.length; i++){
             int val = arr[i];
             ps += val;
+            
+            
+            if(ps == 0){
+                ans = Math.max(ans,i+1);
+                continue;
+            }
             
             if(mp.containsKey(ps)){
                 ans = Math.max(ans, i-mp.get(ps));
