@@ -1,7 +1,7 @@
 # TOPICS FOR UPSOLVING:
 
 ### ARRAY MATRIX PREFIX SUM (C)
-1. Problem itself
+1. Problem itself - done
 2. 3 Medium + 2 hard
 
 ### TRIE DP (D)
