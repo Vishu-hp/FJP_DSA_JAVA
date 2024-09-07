@@ -1,6 +1,6 @@
 # TOPICS FOR UPSOLVING:
 
-### ARRAY MATRIX PREFIX SUM (C)
+### ARRAY MATRIX PREFIX SUM (C) - done
 1. Problem itself - done
 2. 3 Medium + 2 hard - done
 
