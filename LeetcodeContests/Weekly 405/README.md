@@ -2,7 +2,7 @@
 
 ### ARRAY MATRIX PREFIX SUM (C)
 1. Problem itself - done
-2. 3 Medium + 2 hard
+2. 3 Medium + 2 hard - done
 
 ### TRIE DP (D)
 1. Trie study and get notes
