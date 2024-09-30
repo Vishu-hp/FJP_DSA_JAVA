@@ -5,9 +5,9 @@
 2. 3 Medium + 2 hard - done
 
 ### TRIE DP (D)
-1. Trie study and get notes
+1. Trie study and get notes - done
 2. Problem itself
-3. 2 Medium + 2 Hard
+3. 3 Medium + 1 Hard - done
 
 # TO DOS:
 ### Create stringbuilder, List, ArrayList, String Java collection notes 
