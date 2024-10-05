@@ -7,3 +7,9 @@
 ## C - sliding window conecpt use
 
 ## D - same as C , sliding window works
+
+
+# Improvements
+
+## Sliding window practice
+   solve 2 medium and 1 hard (sliding window + string) tag 
