@@ -4,7 +4,7 @@
 
 ## B - couldn't understand problem - some math + binary search use
 
-## C - sliding window conecpt use
+## C - sliding window concept use
 
 ## D - same as C , sliding window works
 
