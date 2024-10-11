@@ -14,5 +14,5 @@
 ## Sliding window practice
    solve 2 medium and 1 hard (sliding window + string) tag 
 
-   did 2 mdm problems
+   did 2 mdm problems,
    couldn't solve hard problem - lc - 30 (Substring with concatenation of all words)
