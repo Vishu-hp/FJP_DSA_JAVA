@@ -1,3 +1,5 @@
+// code implementation is interesting for prefix sum in 2d arr
+
 class Solution {
     public int numberOfSubmatrices(char[][] grid) {
         int rows = grid.length, cols = grid[0].length;
