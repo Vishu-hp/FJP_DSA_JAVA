@@ -2,39 +2,42 @@
 
 class Solution {
     public long validSubstringCount(String word1, String word2) {
-        ArrayList<Long> word1Frq = new ArrayList<>(Collections.nCopies(26, 0L));
-        ArrayList<Long> word2Frq = new ArrayList<>(Collections.nCopies(26, 0L));
+        int cntToMatch = 0, start = 0;
+        long ans = 0;
+        int[] frq1 = new int[26];
+        int[] frq2 = new int[26];
 
-        for(char c: word2.toCharArray()){
-            word2Frq.set( c - 'a' , word2Frq.get(c - 'a') + 1);
+        // no need
+        // Arrays.fill(frq1, 0);
+        // Arrays.fill(frq2, 0);
+
+        for(int idx=0; idx < word2.length(); idx++){
+            frq2[word2.charAt(idx) - 'a']++;
         }
 
-        long ans = 0;
-        int start = 0, cntToMat = 0;
 
-        for(int ci=0; ci< word1.length(); ci++){
-            char ch = word1.charAt(ci);
+        for(int ci=0; ci < word1.length(); ci++){
+            int ch = word1.charAt(ci) - 'a';
+            frq1[ch]++;
 
-            if(word2Frq.get(ch - 'a') > 0 && word1Frq.get(ch - 'a') < word2Frq.get(ch - 'a')){
-                cntToMat++;
+            if(frq2[ch]>0 && frq1[ch] <= frq2[ch]){
+                cntToMatch++;
             }
 
-            word1Frq.set(ch - 'a', word1Frq.get(ch - 'a')+1);
+            while(cntToMatch == word2.length()){
+                ans += (word1.length() - ci);
+                int startChar = word1.charAt(start) - 'a'; 
 
-            while(cntToMat == word2.length()){
-                ans += word1.length()-ci;
-                char startCh = word1.charAt(start);
-                word1Frq.set(startCh - 'a', word1Frq.get(startCh - 'a')-1);
-
-                if(word2Frq.get(startCh - 'a') > 0){
-                    if(word1Frq.get(startCh - 'a') < word2Frq.get(startCh - 'a')){
-                        cntToMat--;
-                    }
+                frq1[startChar]--;
+                
+                if(frq2[startChar] > 0 && frq1[startChar] < frq2[startChar]){
+                    cntToMatch--;
                 }
 
                 start++;
             }
         }
+
         return ans;
     }
 }
